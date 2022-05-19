@@ -1,0 +1,17 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+    color: #3D405B;
+    background-color: #f6f5ee;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+}
