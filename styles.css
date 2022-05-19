@@ -1,17 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Ubuntu', sans-serif;
     color: #3D405B;
     background-color: #f6f5ee;
 }
 
+/* Logo & Navbar */
+
+header {
+    background-color: #f6f5ee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    min-height: 5rem;
+    padding: 0.5rem 1rem;
+    position: fixed;
+    top: 0;
+}
+
+#logo {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 0.5rem;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: #3D405B;
+    padding: 1rem;
+}
+
+nav a:hover {
+    background-color: white;
+}
+
+/* Moving main content down to leave space for navbar */
+
+main {
+    margin-top: 6rem;
+}
+
+/* Headings */
+
 h1 {
     font-family: 'Raleway', sans-serif;
     font-size: 3rem;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 h2 {
     font-family: 'Raleway', sans-serif;
     font-size: 2rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
     font-weight: 600;
 }
