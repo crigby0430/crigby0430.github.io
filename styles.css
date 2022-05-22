@@ -4,22 +4,27 @@
 
 body {
     font-family: 'Ubuntu', sans-serif;
-    color: #3D405B;
-    background-color: #f6f5ee;
+    color: #14313F;
+    background-color: #FFFEEB;
+    margin: 0;
+    padding: 0;
 }
 
 /* Logo & Navbar */
 
 header {
-    background-color: #f6f5ee;
+    background-color: #14313F;
+    color: #FFFEEB;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100vw;
     min-height: 5rem;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 2rem;
+
+    /* sticky navbar... not actually sure if this is necessary
     position: fixed;
-    top: 0;
+    top: 0; */
 }
 
 #logo {
@@ -39,7 +44,7 @@ nav ul {
 nav a {
     display: block;
     text-decoration: none;
-    color: #3D405B;
+    color: #FFFEEB;
     padding: 1rem;
 }
 
@@ -47,28 +52,118 @@ nav a:hover {
     background-color: white;
 }
 
-/* Moving main content down to leave space for navbar */
-
-main {
-    margin-top: 6rem;
-}
-
-/* Headings */
+/* Text */
 
 h1 {
+    color: #972E0C;
     font-family: 'Raleway', sans-serif;
     font-size: 3rem;
     font-weight: 700;
+    -webkit-text-stroke: 1px #FFFEEB;
+    text-shadow: 0px 4px 0px rgba(43, 45, 64, 0.25);
 }
 
 h2 {
     font-family: 'Raleway', sans-serif;
     font-size: 2rem;
     font-weight: 700;
+    width: 100%;
 }
 
 h3 {
     font-family: 'Raleway', sans-serif;
     font-size: 1.5rem;
     font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    width: 100%;
+}
+
+/* main */
+
+
+
+/* Intro Section */
+
+#intro {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 4rem;
+}
+
+.intro-text {
+    width: 50%;
+}
+
+/* Projects Section */
+
+#projects {
+    color: #FFFEEB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 4rem;
+    background-color: #A3C2B7;
+    gap: 2rem;
+}
+
+#projects > h2 {
+    -webkit-text-stroke: 1px #14313F; /* this is ugly!!!!!!! */
+    text-shadow: 0px 4px 0px rgba(43, 45, 64, 0.25);
+}
+
+.project-card {
+    display: flex;
+    gap: 2rem;
+}
+
+.project-description {
+    background-color: #972E0C;
+    border: 4px solid #FFFEEB;
+    box-shadow: 0px 8px 0px rgba(43, 45, 64, 0.25);
+    border-radius: 8px;
+    padding: 3rem 2rem;
+}
+
+.project-description > a {
+    color: #FFFEEB;
+    text-decoration: underline wavy 1px;
+    font-weight: bold;
+}
+
+.project-image {
+    background-color: #EFC176;
+    border: 4px solid #FFFEEB;
+    box-shadow: 0px 8px 0px rgba(43, 45, 64, 0.25);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-image > img {
+    max-width: 480px;
+    max-height: 360px;
+}
+
+/* Contact */
+
+#contact {
+    padding: 2rem 4rem;
+}
+
+/* Footer */
+
+footer {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #14313F;
+    color: #FFFEEB;
+    text-align: center;
 }
